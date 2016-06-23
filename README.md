@@ -3,10 +3,15 @@
 A Clojure library to visualize the performance test of an AMQP message queue (eg., Apache QPID, RabbitMQ etc) running on port 5672 with AMQP protocol version 0.8 or higher. Produces a set of messages and consumes it collecting stats on the total messages/second consumed from the produced total messages for each block. Finally generates a plot for total messages vs messages/second for the AMQP broker.
 
 ## Usage
+Prerequisites
+You will require an AMQP server running at port 5672 configured with PLAIN auth to run this. You can update the user/pwd for auth as needed in the code and build.
 
 To run, at the root folder 
 
+
 ```
+$ lein deps
+
 $ lein run 
 ```
 
